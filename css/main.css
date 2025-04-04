@@ -45,16 +45,16 @@ left: 350px;
 top: 150px;
 }
 .right{
-  position: relative;
-  right:450px ;
-  top: 90px;
+  position: absolute;
+  left:280px ;
+  top: 190px;
   
 }
 .left{
-  position: relative;
-  top:100px;
+  position: absolute;
+  top:95px;
   bottom:auto;
-  right: 1205px;;
+  right: 205px;;
 }
 
 
@@ -97,22 +97,54 @@ top: 150px;
 
 .star1 {
   animation: rotation 8s infinite linear;
-position: relative;
-bottom: 370px;: ;
+position: absolute;
+bottom: 570px;
 }
 
 .star2{
   animation: rotation 8s infinite linear;
-position: relative;
+position: absolute;
 left:600px ;
-bottom: 50px;
+bottom: 70px;
 }
 
 .star3{
   animation: rotation 8s infinite linear;
-position: relative;
-left: 600px;
+position: absolute;
+left: 1050px;
 bottom:550px;
+}
+.words{
+  position: absolute;
+  left: 500px;
+  top: 70px;
+}
+
+.green1, .green2, .green3, .green4 {
+  position: absolute;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+.green1{
+  position: absolute;
+  top: 500px;
+  right:0;
+}
+
+.green2{
+  position: absolute;
+  top: 600px;
+  right: 1100px; ;
+}
+
+.green3{
+  position: absolute;
+  left: 0;
+}
+
+.green4{
+  position: absolute;
+  right: 0;
 }
 
 @keyframes rotation {
