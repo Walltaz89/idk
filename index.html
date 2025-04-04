@@ -1,35 +1,28 @@
 <!doctype html>
-<html class="no-js" lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Responsive Layouts</title>
-  <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-</head>
-
-<body>
-  <div class="rotate">
-  <img src="img/radial.png">
-</div>
-<div> 
-  <img src="img/food thing.png" alt="">
-</div>
-  <script src="js/main.js"></script>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Layouts</title>
+    <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="scrollable-content">
+       
+        <img src="img/radial.png" alt="Radial Image" class="radial">
+       
+        <div class="scroll-content">
+          <img src="img/food thing.png" class="food" width="800" height="800">
+          <img src="img/star thing.png" class="star1" />
+          <img src="img/star thing.png" class="star2" />
+          <img src="img/star thing.png" class="star3" />
+          <img src="img/another food thing.png" alt="Another Food Image" class="right" width="700" height="700" id="leftswipe">
+          <img src="img/something diffrent.png" alt="Something Different" class="left" width="900" height="900" id="rightswipe">
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
 </html>
