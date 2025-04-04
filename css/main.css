@@ -127,26 +127,52 @@ bottom:550px;
 }
 .green1{
   position: absolute;
-  top: 500px;
+  top: 700px;
   right:0;
 }
 
 .green2{
   position: absolute;
-  top: 600px;
+  top: 700px;
   right: 1100px; ;
 }
 
 .green3{
   position: absolute;
   left: 0;
+  top: 100px;
 }
 
 .green4{
   position: absolute;
   right: 0;
+  top:100px;
 }
 
+.buttery{
+position: absolute;
+left: 1100px;
+top: 20px;
+}
+
+.golden{
+  position: absolute;
+  top: 10px;
+  left:0px;
+
+}
+
+.layered{
+  position: absolute;
+  bottom: 50px;
+  right:0px;
+}
+
+.warm{
+  position: absolute;
+  top: 620px;
+  left:0;
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
@@ -156,8 +182,192 @@ bottom:550px;
   }
 }
  
-  @media screen and (max-width: 768px){}
- @media screen and (min-width: 769px) and (max-width: 1024px){}  
+@media only screen 
+and (min-device-width: 390px) 
+and (max-device-width: 390px) 
+and (min-device-height: 844px) 
+and (max-device-height: 844px){
 
-@media screen and (min-width: 1025px){}
+  #rightswipe {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+ 
+.left {
+  position: absolute;
+  top: 350px;
+  bottom: auto;
+  left: 5px;
+}
+
+#leftswipe {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.right {
+  position: absolute;
+  left: 14px;
+  top: 400px;
+}
+img.food {
+  width: 300px;
+  height: 300px;
+}
+
+.food {
+  position: absolute;
+  left: 50px;
+  top: 370px;
+}
+
+img.words {
+  width:300px;
+  height: 300px;
+}
+
+.words {
+  position: absolute;
+  left: 50px;
+  top: 70px;
+}
+
+#main{
+  display:none;
+}
+
+.star1, .star2, .star3{
+  width: 100px;
+  height: 100px;
+}
+
+.star1 {
+  animation: rotation 8s infinite linear;
+  position: absolute;
+  bottom: 650px;
+}
+
+.star2 {
+  animation: rotation 8s infinite linear;
+  position: absolute;
+  left: 300px;
+  bottom: 330px;
+}
+
+.star3 {
+  animation: rotation 8s infinite linear;
+  position: absolute;
+  left: 240px;
+  bottom: 650px;
+}
+
+.buttery, .golden, .layered, .warm{
+
+  width: 300px;
+  height: 300px;
+}
+
+.warm {
+  position: absolute;
+  top: 660px;
+  left: 50px;
+}
+
+.golden {
+  position: absolute;
+  top: 590px;
+  left: 50px;
+}
+
+.buttery {
+  position: absolute;
+  left: 50px;
+  top: 520px;
+}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
+
+  #main{
+    display:none;
+  }
+
+  .food {
+    position: absolute;
+    left:90px;
+    top:90px;
+
+
+  }
+
+  .left {
+    position: absolute;
+    top: 50px;
+    bottom: auto;
+    left:90px;
+  }
+
+  .right {
+    position: absolute;
+    left: 14px;
+    top: 100px;
+  }
+
+  .star1 {
+    animation: rotation 8s infinite linear;
+    position: absolute;
+    bottom: 850px;
+    left: 580px;
+  }
+  
+  .star2 {
+    animation: rotation 8s infinite linear;
+    position: absolute;
+    left: 00px;
+    bottom: 300px;
+  }
+  
+  .star3 {
+    animation: rotation 8s infinite linear;
+    position: absolute;
+    left: 740px;
+    bottom: 50px;
+  }
+
+  .warm {
+    position: absolute;
+    top: 660px;
+    left: 300px;
+  }
+  
+  .golden {
+    position: absolute;
+    top: 590px;
+    left: 300px;
+  }
+  
+  .buttery {
+    position: absolute;
+    left: 300px;
+    top: 520px;
+  }
+
+  .words {
+    position: absolute;
+    left: 9px;
+    top: 0px;
+  }
+
+  .layered{
+    right: 300px;
+    top: 760px;
+  }
+
+
+
+}
   
